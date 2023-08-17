@@ -1,0 +1,1 @@
+export {type NavigationItemProps, navigationItemsWithLabels, navigationItemsWithIcons} from "./navigationConfig";
