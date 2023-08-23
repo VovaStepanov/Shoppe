@@ -1,14 +1,22 @@
-import {topAdaptiveNavigationItems, bottomAdaptiveNavigationItems} from "@/config/adaptiveNavigationConfig";
+"use client";
+
+import {bottomAdaptiveNavigationItems, topAdaptiveNavigationItems} from "@/config/adaptiveNavigationConfig";
 import Link from "next/link";
 
-import {motion, useAnimate, stagger } from "framer-motion";
+import {motion, useAnimationControls, useInView} from "framer-motion";
+
+import {useEffect, useRef, useState} from "react";
 
 import {cn} from "@/lib/twMerge";
+import {useViewportAnimation} from "@/hooks/useViewportAnimation";
 
 const fadeInAnimationVariants = {
     initial: {
         opacity: 0,
-        y: 100
+        y: 100,
+        transition: {
+            duration: 0
+        }
     },
     animate: {
         opacity: 1,
@@ -22,17 +30,25 @@ const fadeInAnimationVariants = {
 }
 
 export const NavigationList = () => {
+    const ref = useRef(null)
+    const {controls} = useViewportAnimation(ref, {
+        outOfViewport: "initial",
+        insideViewport: "animate"
+    });
 
     return (
         <motion.ul
+            ref={ref}
             className={"ml-1"}
             initial={"initial"}
-            whileInView={"animate"}
-            transition={{staggerChildren: 0.05}}
+            animate={controls}
+            variants={{
+                animate: { transition: { staggerChildren: 0.05 } },
+            }}
         >
             {topAdaptiveNavigationItems.map((item, idx) => (
                 <motion.li
-                    className={"heading-3"} key={idx}
+                    className={"heading-1"} key={idx}
                     variants={fadeInAnimationVariants}
                 >
                     <Link
@@ -52,7 +68,7 @@ export const NavigationList = () => {
             />
             {bottomAdaptiveNavigationItems.map((item, idx) => (
                 <motion.li
-                    className={"heading-3"}
+                    className={"heading-1"}
                     key={idx}
                     variants={fadeInAnimationVariants}
                 >

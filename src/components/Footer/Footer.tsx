@@ -3,7 +3,7 @@ import {FooterBottom} from "@/components/Footer/FooterBottom";
 
 const Footer = () => {
     return (
-        <footer className={"pb-4 xs:pb-8"}>
+        <footer className={"pb-4 xs:pb-8 sm:mt-[200px] mt-[70px]"}>
           <div className={"container"}>
             <FooterTop/>
             <FooterBottom/>

@@ -2,26 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    /* z-indexes */
-    --z-1: 1;
-    --z-2: 2;
-    --z-3: 3;
-    --z-4: 4;
-    --z-5: 5;
-    --z-6: 6;
-}
 @responsive {
     .heading-1 {
-        @apply text-[33px] font-medium sm:text-xl
+        @apply text-xl sm:text-[33px] font-medium
     }
 
     .heading-2 {
-        @apply text-[26px] leading-[35px] font-normal sm:text-base
+        @apply text-base sm:text-[26px] leading-[35px] font-normal
     }
 
     .heading-3 {
-        @apply text-xl leading-[26px] font-normal sm:text-sm
+        @apply text-sm sm:text-xl leading-[26px] font-normal
     }
 
     .heading-4 {
@@ -50,3 +41,36 @@
     @apply px-4 mx-auto
 }
 
+/* Card list grid logic */
+.card-text {
+    font-size: clamp(15px, 2.2vw, 19px);
+    line-height: 1;
+}
+
+.card-text-margin {
+    margin-top: max(10px, 1.7vw);
+    margin-bottom: max(8px, 1.1vw);
+}
+
+.card-list-grid-columns {
+    /**
+   * User input values.
+   */
+    --grid-layout-gap: 20px;
+    --grid-column-count: 3;
+    --grid-item--min-width: 136px;
+
+
+    /**
+     * Calculated values.
+     */
+    --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+    grid-column-gap: var(--grid-layout-gap);
+    grid-row-gap: 40px;
+}
+/* Card list grid logic */
