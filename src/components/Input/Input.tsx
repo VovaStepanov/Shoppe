@@ -30,7 +30,13 @@ export const Input: React.FC<InputProps> = (props) => {
                 })}
                 {...attributes}
             />
-            {icon}
+            <span
+                className={cn({
+                    [iconLeftStyles]: iconPosition === "left",
+                    [iconRightStyles]: iconPosition === "right"
+                })}>
+                {icon}
+            </span>
         </div>
     )
 }
