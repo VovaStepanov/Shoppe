@@ -14,7 +14,7 @@ import {usePathname} from "next/navigation";
 
 import {cn} from "@/lib/twMerge";
 
-const Header = () => {
+export const Header = () => {
     const pathname = usePathname();
 
     // Adaptive menu visibility toggle
@@ -45,7 +45,3 @@ const Header = () => {
         </header>
     )
 }
-
-module.exports = {
-    Header
-};

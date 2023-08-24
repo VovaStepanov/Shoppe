@@ -1,7 +1,7 @@
 import {FooterTop} from "@/components/Footer/FooterTop";
 import {FooterBottom} from "@/components/Footer/FooterBottom";
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer className={"pb-4 xs:pb-8 sm:mt-[200px] mt-[70px]"}>
           <div className={"container"}>
@@ -10,8 +10,4 @@ const Footer = () => {
           </div>
         </footer>
     )
-}
-
-module.exports = {
-    Footer
 }

@@ -8,15 +8,10 @@ const Allerta_Stencil_Font = Allerta_Stencil({weight: "400", subsets: ["latin"]}
 type ButtonProps = {
     children: React.ReactNode,
     onClick: () => void,
-    variant: "default",
-    className?: string
-} | {
-    children: React.ReactNode,
-    onClick: () => void,
-    variant: "withCounter",
-    count: number,
-    className?: string
-};
+    variant?: "default" | "withCounter",
+    className?: string,
+    count?: number,
+}
 
 export const Button: React.FC<ButtonProps> = (props) => {
     let {children, onClick: clickHandler, variant, count, className: cls} = props;

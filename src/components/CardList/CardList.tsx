@@ -1,4 +1,11 @@
-import {Card, CardProps} from "@/components/Card";
+import {Card} from "@/components/Card";
+
+interface CardProps {
+    id: number,
+    name: string,
+    price: number,
+    image: string
+}
 
 interface CardListProps {
     cardList: CardProps[]

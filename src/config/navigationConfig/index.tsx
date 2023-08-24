@@ -1,1 +1,2 @@
-export {type NavigationItemProps, navigationItemsWithLabels, navigationItemsWithIcons} from "./navigationConfig";
+export {navigationItemsWithLabels, navigationItemsWithIcons} from "./navigationConfig";
+export type {NavigationItem} from "./navigationConfig";

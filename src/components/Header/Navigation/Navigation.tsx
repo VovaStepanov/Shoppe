@@ -15,8 +15,8 @@ export const Navigation = () => {
                 </NavigationItem>
           ))}
           <span>|</span>
-          {navigationItemsWithIcons.map(({content, ...other}, idx) => (
-              <NavigationItem {...other} key={idx}>
+          {navigationItemsWithIcons.map(({content, url, ...other}, idx) => (
+              <NavigationItem {...other} url={url} key={idx}>
                   {content}
               </NavigationItem>
           ))}

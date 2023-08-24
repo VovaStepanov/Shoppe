@@ -1,7 +1,7 @@
 import Image from "next/image";
 import LogoImg from "@/assets/logo.svg";
 import Link from "next/link";
-const Logo = () => {
+export const Logo = () => {
 
     return (
         <div className={"w-[136px] h-8 sm:w-24 relative cursor-pointer"}>
@@ -16,7 +16,3 @@ const Logo = () => {
         </div>
     )
 }
-
-module.exports = {
-    Logo
-};

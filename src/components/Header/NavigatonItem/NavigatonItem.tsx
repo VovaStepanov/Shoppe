@@ -1,15 +1,13 @@
 "use client";
 
-import {NavigationItemProps} from "@/config/navigationConfig";
 import Link from "next/link";
 import {cn} from "@/lib/twMerge"
 
 type NavigationItemProps = {
     children: React.ReactNode,
-    url: string
-} | {
-    children: React.ReactNode,
-    onClick: () => void
+    url?: string,
+    onClick?: () => void,
+    isActive?: boolean
 };
 
 export const NavigationItem: React.FC<NavigationItemProps> = (props) => {

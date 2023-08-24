@@ -28,16 +28,16 @@ export const HomeSlider = () => {
                 className={"rounded-xl"}
             >
                 <SwiperSlide>
-                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={SlideImg1}/>
+                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={<Image src={SlideImg1} alt={"slide"} />}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={SlideImg1}/>
+                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={<Image src={SlideImg1} alt={"slide"} />}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={SlideImg1}/>
+                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={<Image src={SlideImg1} alt={"slide"} />}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={SlideImg1}/>
+                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={<Image src={SlideImg1} alt={"slide"} />}/>
                 </SwiperSlide>
             </Swiper>
         </div>

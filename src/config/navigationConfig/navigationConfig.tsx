@@ -4,12 +4,10 @@ import Cart from "@/assets/cart.svg";
 import User from "@/assets/user.svg";
 
 
-type NavigationItem = {
+export type NavigationItem = {
     content: string | React.ReactNode,
-    url: string
-} | {
-    content: string | React.ReactNode,
-    onClick: () => void
+    url?: string,
+    onClick?: () => void
 }
 
 export const navigationItemsWithLabels: NavigationItem[] = [

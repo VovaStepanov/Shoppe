@@ -15,11 +15,7 @@ export const Slide: React.FC<SlideProps> = (props) => {
 
     return (
         <div className={"relative w-full h-[300px] sm:h-[initial] max-h-none sm:max-h-[640px]"}>
-            <Image
-                className={"w-full h-full object-right sm:h-auto object-cover rounded-lg"}
-                src={image}
-                alt={"slide"}
-            />
+            {image}
             <div className={"absolute bottom-[40px] sm:bottom-[initial] sm:top-[50%] left-[5%] sm:translate-y-[-50%]"}>
                 <p className={"text-white heading-4 sm:heading-1"}>{productName}</p>
                 <p className={"sm:heading-2 body-medium text-white mt-1 mb-3 sm:mt-4 sm:mb-12"}>{productPrice}</p>

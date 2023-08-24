@@ -1,5 +1,6 @@
 import {cn} from "@/lib/twMerge";
 import Image from "next/image";
+import {ClassValue} from "clsx";
 
 type InputProps = {
     placeholder: string,
@@ -14,11 +15,11 @@ const iconLeftStyles = "absolute top-[50%] left-2 translate-y-[-50%] pointer-eve
 const iconRightStyles = "absolute top-[50%] right-2 translate-y-[-50%] pointer-events-none select-none";
 
 export const Input: React.FC<InputProps> = (props) => {
-    const {placeholder, icon, iconPosition, onInput: inputHandler, className: cls, attributes} = props;
+    const {placeholder, icon, iconPosition, onInput: inputHandler, className: cls, ...attributes} = props;
 
     return (
         <>
-            <div className={cn("relative", cls)}>
+            <div className={cn("relative", cls || "")}>
                 <input
                     placeholder={placeholder}
                     onInput={inputHandler}
@@ -28,10 +29,7 @@ export const Input: React.FC<InputProps> = (props) => {
                     })}
                     {...attributes}
                 />
-                <Image
-                    src={icon} alt={"Icon"}
-                    className={iconPosition === "left" ? iconLeftStyles : iconRightStyles}
-                />
+                {icon}
             </div>
         </>
     )

@@ -1,14 +1,13 @@
 import Image from "next/image";
 
 export interface CardProps {
-    id: number,
     name: string,
     price: number,
     image: string,
 }
 
 export const Card: React.FC<CardProps> = (props) => {
-    const {id, name, price, image} = props;
+    const {name, price, image} = props;
 
     return (
         <div className={"max-w-[400px]"}>
