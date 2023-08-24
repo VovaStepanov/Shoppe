@@ -1,6 +1,6 @@
 "use client";
 
-import {cn} from "@/lib/twMerge";
+import {cn} from "../../lib/twMerge";
 import {Allerta_Stencil, DM_Sans} from "next/font/google"
 
 const Allerta_Stencil_Font = Allerta_Stencil({weight: "400", subsets: ["latin"]});

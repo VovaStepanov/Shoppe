@@ -1,6 +1,6 @@
 "use client";
 
-import {navigationItemsWithIcons, navigationItemsWithLabels} from "@/config/navigationConfig";
+import {navigationItemsWithIcons, navigationItemsWithLabels} from "../../../config/navigationConfig";
 import {NavigationItem} from "../NavigatonItem";
 import { usePathname } from 'next/navigation';
 

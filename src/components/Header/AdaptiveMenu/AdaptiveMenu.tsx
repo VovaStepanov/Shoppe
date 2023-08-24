@@ -1,9 +1,9 @@
 "use client";
 
-import {cn} from "@/lib/twMerge";
+import {cn} from "../../../lib/twMerge";
 import {NavigationList} from "./NavigationList";
 
-import Search from "@/assets/search.svg";
+import Search from "../../../assets/search.svg";
 
 type AdaptiveMenuProps = {
     isVisible: boolean,

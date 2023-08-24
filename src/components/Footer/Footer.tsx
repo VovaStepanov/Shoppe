@@ -1,5 +1,5 @@
-import {FooterTop} from "@/components/Footer/FooterTop";
-import {FooterBottom} from "@/components/Footer/FooterBottom";
+import {FooterTop} from "./FooterTop";
+import {FooterBottom} from "./FooterBottom";
 
 export const Footer = () => {
     return (

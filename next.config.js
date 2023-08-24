@@ -5,6 +5,13 @@ const nextConfig = {
             "dfstudio-d420.kxcdn.com"
         ],
     },
+    webpack(config) {
+        config.experiments = {
+            ...config.experiments,
+            topLevelAwait: true,
+        }
+        return config
+    }
 }
 
 module.exports = nextConfig

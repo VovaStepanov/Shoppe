@@ -1,9 +1,9 @@
 import React from "react";
 
-import LinkedIn from "@/assets/linkedin.svg";
-import Facebook from "@/assets/facebook.svg";
-import Instagram from "@/assets/instagram.svg";
-import Twitter from "@/assets/twitter.svg";
+import LinkedIn from "../../assets/linkedin.svg";
+import Facebook from "../../assets/facebook.svg";
+import Instagram from "../../assets/instagram.svg";
+import Twitter from "../../assets/twitter.svg";
 import Image from "next/image";
 
 type FooterItem = {

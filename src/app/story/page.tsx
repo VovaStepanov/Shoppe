@@ -1,5 +1,5 @@
 const Story = () => {
-    return (
+    return  (
         <>
             Story
         </>

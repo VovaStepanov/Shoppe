@@ -1,4 +1,4 @@
-import {HomePage} from "@/pages/Home";
+import {HomePage} from "@/pagesList/Home";
 
 const Home = () => {
   return (

@@ -1,9 +1,9 @@
 "use client";
 
-import {Button} from "@/components/Button";
+import {Button} from "../../Button";
 import Image from "next/image";
 import { Spin as Hamburger } from 'hamburger-react'
-import Cart from "@/assets/cart.svg";
+import Cart from "../../../assets/cart.svg";
 
 type AdaptiveNavigationProps = {
     isActive: boolean,

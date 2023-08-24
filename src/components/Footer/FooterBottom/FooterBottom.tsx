@@ -1,4 +1,4 @@
-import {footerSocials} from "@/config/footerConfig/footerConfig";
+import {footerSocials} from "../../../config/footerConfig/footerConfig";
 import Link from "next/link";
 
 export const FooterBottom = () => {

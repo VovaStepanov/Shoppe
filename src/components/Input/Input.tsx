@@ -1,8 +1,10 @@
-import {cn} from "@/lib/twMerge";
+"use client";
+
+import {cn} from "../../lib/twMerge";
 import Image from "next/image";
 import {ClassValue} from "clsx";
 
-type InputProps = {
+interface InputProps {
     placeholder: string,
     icon?: React.ReactNode,
     iconPosition?: "right" | "left",
@@ -18,19 +20,17 @@ export const Input: React.FC<InputProps> = (props) => {
     const {placeholder, icon, iconPosition, onInput: inputHandler, className: cls, ...attributes} = props;
 
     return (
-        <>
-            <div className={cn("relative", cls || "")}>
-                <input
-                    placeholder={placeholder}
-                    onInput={inputHandler}
-                    className={cn("cursor-pointer outline-zinc-200 px-2", cls || "", {
-                        "pr-12": iconPosition === "right",
-                        "pl-10":iconPosition === "left"
-                    })}
-                    {...attributes}
-                />
-                {icon}
-            </div>
-        </>
+        <div className={cn("relative", cls || "")}>
+            <input
+                placeholder={placeholder}
+                onInput={inputHandler}
+                className={cn("cursor-pointer outline-zinc-200 px-2", cls || "", {
+                    "pr-12": iconPosition === "right",
+                    "pl-10":iconPosition === "left"
+                })}
+                {...attributes}
+            />
+            {icon}
+        </div>
     )
 }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {CardList} from "@/components/CardList";
+import {CardList} from "../../../components/CardList";
 
 const cards = [
     {

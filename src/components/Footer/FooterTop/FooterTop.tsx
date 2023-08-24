@@ -1,13 +1,13 @@
 "use client";
 
-import {footerItems} from "@/config/footerConfig";
+import {footerItems} from "../../../config/footerConfig";
 import Link from "next/link";
-import {Input} from "@/components/Input";
+import {Input} from "../../Input";
 import Image from "next/image";
 
-import Arrow from "@/assets/arrow.svg";
+import Arrow from "../../../assets/arrow.svg";
 
-import {cn} from "@/lib/twMerge";
+import {cn} from "../../../lib/twMerge";
 
 export const FooterTop = () => {
     return (
@@ -26,7 +26,7 @@ export const FooterTop = () => {
             <div>
                 <Input
                     placeholder={"Give an email, get the newsletter."}
-                    icon={Arrow}
+                    icon={<Image src={Arrow} alt={"Icon"}/>}
                     onInput={() => {}}
                     iconPosition={"right"}
                     className={"body-medium md:heading-5 order-1 xs:order-none w-full xs:w-[250px] md:w-[400px] lg:h-10 h-8 border-b-[3px] text-dark-gray border-light-gray focus:border-dark-gray focus:outline-0"}

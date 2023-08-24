@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Search from "@/assets/search.svg";
-import Cart from "@/assets/cart.svg";
-import User from "@/assets/user.svg";
+import Search from "../../assets/search.svg";
+import Cart from "../../assets/cart.svg";
+import User from "../../assets/user.svg";
 
 
 export type NavigationItem = {

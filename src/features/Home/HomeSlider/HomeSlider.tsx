@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import "./homeSlider.css";
 
 import Image from "next/image";
-import SlideImg1 from "@/assets/homeSlide1.png";
+import SlideImg1 from "../../../assets/homeSlide1.png";
 
 export const HomeSlider = () => {
     return (

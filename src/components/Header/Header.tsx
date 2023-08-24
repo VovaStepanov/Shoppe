@@ -2,17 +2,18 @@
 
 import {useState} from "react";
 
-import Search from "@/assets/search.svg";
+import Search from "../../assets/search.svg";
 
-import {Logo} from "@/components/Logo"
-import {AdaptiveMenu} from "@/components/Header/AdaptiveMenu";
-import {Navigation} from "@/components/Header/Navigation";
-import {AdaptiveNavigation} from "@/components/Header/AdaptiveNavigation";
-import {Input} from "@/components/Input";
+import {Logo} from "../Logo"
+import {AdaptiveMenu} from "./AdaptiveMenu";
+import {Navigation} from "./Navigation";
+import {AdaptiveNavigation} from "./AdaptiveNavigation";
+import {Input} from "../Input";
 
 import {usePathname} from "next/navigation";
 
 import {cn} from "@/lib/twMerge";
+import Image from "next/image";
 
 export const Header = () => {
     const pathname = usePathname();
@@ -38,7 +39,7 @@ export const Header = () => {
                     className={"mb-3 h-10 bg-zinc-100 rounded w-full text-dark-gray body-medium"}
                     placeholder={"Search"}
                     onInput={() => {}}
-                    icon={Search}
+                    icon={<Image src={Search} alt={"Search"}/>}
                     iconPosition={"left"}
                 />
             </div>
