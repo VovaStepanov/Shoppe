@@ -2,12 +2,12 @@
 
 import {footerItems} from "../../../config/footerConfig";
 import Link from "next/link";
-import {Input} from "../../Input";
+import {Input} from "@/components/Input";
 import Image from "next/image";
 
-import Arrow from "../../../assets/arrow.svg";
+import Arrow from "@/assets/arrow.svg";
 
-import {cn} from "../../../lib/twMerge";
+import {cn} from "@/lib/twMerge";
 
 export const FooterTop = () => {
     return (

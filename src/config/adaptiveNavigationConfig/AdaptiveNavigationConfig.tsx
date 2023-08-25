@@ -1,6 +1,6 @@
 import Image from "next/image";
-import User from "../../assets/user.svg";
-import Logout from "../../assets/logout.svg";
+import User from "@/assets/user.svg";
+import Logout from "@/assets/logout.svg";
 
 type AdaptiveNavigationItem = {
     content: string | React.ReactNode,

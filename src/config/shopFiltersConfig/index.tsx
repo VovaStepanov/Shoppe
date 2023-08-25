@@ -1,0 +1,1 @@
+export {shopFiltersConfig} from "./shopFiltersConfig";

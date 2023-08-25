@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import "./homeSlider.css";
 
 import Image from "next/image";
-import SlideImg1 from "../../../assets/homeSlide1.png";
+import SlideImg1 from "@/assets/homeSlide1.png";
 
 export const HomeSlider = () => {
     return (
@@ -28,16 +28,16 @@ export const HomeSlider = () => {
                 className={"rounded-xl"}
             >
                 <SwiperSlide>
-                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={<Image src={SlideImg1} alt={"slide"} />}/>
+                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={SlideImg1}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={<Image src={SlideImg1} alt={"slide"} />}/>
+                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={SlideImg1}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={<Image src={SlideImg1} alt={"slide"} />}/>
+                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={SlideImg1}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={<Image src={SlideImg1} alt={"slide"} />}/>
+                    <Slide productName={"Gold big hoops "} productPrice={"$ 68,00"} productUrl={"/"} image={SlideImg1}/>
                 </SwiperSlide>
             </Swiper>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import {cn} from "../../lib/twMerge";
+import {cn} from "@/lib/twMerge";
 import Image from "next/image";
 import {ClassValue} from "clsx";
 

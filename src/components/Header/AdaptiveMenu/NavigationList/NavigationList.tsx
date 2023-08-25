@@ -1,14 +1,14 @@
 "use client";
 
-import {bottomAdaptiveNavigationItems, topAdaptiveNavigationItems} from "../../../../config/adaptiveNavigationConfig";
+import {bottomAdaptiveNavigationItems, topAdaptiveNavigationItems} from "@/config/adaptiveNavigationConfig";
 import Link from "next/link";
 
 import {motion, useAnimationControls, useInView} from "framer-motion";
 
 import {useEffect, useRef, useState} from "react";
 
-import {cn} from "../../../../lib/twMerge";
-import {useViewportAnimation} from "../../../../hooks/useViewportAnimation";
+import {cn} from "@/lib/twMerge";
+import {useViewportAnimation} from "@/hooks/useViewportAnimation";
 
 const fadeInAnimationVariants = {
     initial: {

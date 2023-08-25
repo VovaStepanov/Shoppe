@@ -1,5 +1,6 @@
-import Link from "next/link";
 import {CardList} from "@/components/CardList";
+import {Filters} from "@/features/Shop/Filters";
+import {Pagination} from "@/components/Pagination";
 
 const cards = [
     {
@@ -100,22 +101,14 @@ const cards = [
     },
 ]
 
-export const LatestProductsSection = () => {
-
-
+export const ShopPage = () => {
     return (
-        <div className={"pt-10"}>
-            <div className={"flex justify-between items-center"}>
-                <p className={"heading-1"}>
-                    Shop The Latest
-                </p>
-                <Link href={"/shop"} className={"heading-4 text-accent"}>
-                    View All
-                </Link>
-            </div>
-            <div className={"mt-10"}>
+        <div>
+            <div>
+                <Filters/>
                 <CardList cardList={cards}/>
             </div>
+            <Pagination/>
         </div>
     );
-}
+};

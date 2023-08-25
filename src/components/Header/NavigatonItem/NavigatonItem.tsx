@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {cn} from "../../../lib/twMerge"
+import {cn} from "@/lib/twMerge"
 
 type NavigationItemProps = {
     children: React.ReactNode,

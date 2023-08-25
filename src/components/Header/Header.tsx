@@ -2,13 +2,13 @@
 
 import {useState} from "react";
 
-import Search from "../../assets/search.svg";
+import Search from "@/assets/search.svg";
 
-import {Logo} from "../Logo"
+import {Logo} from "@/components/Logo"
 import {AdaptiveMenu} from "./AdaptiveMenu";
 import {Navigation} from "./Navigation";
 import {AdaptiveNavigation} from "./AdaptiveNavigation";
-import {Input} from "../Input";
+import {Input} from "@/components/Input";
 
 import {usePathname} from "next/navigation";
 

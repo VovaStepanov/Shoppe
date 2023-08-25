@@ -1,8 +1,8 @@
+import {ShopPage} from "@/pagesList/Shop";
+
 const Shop = () => {
     return (
-        <>
-            Shop
-        </>
+        <ShopPage/>
     )
 }
 

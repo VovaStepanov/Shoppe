@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LogoImg from "../../assets/logo.svg";
+import LogoImg from "@/assets/logo.svg";
 import Link from "next/link";
 export const Logo = () => {
 
