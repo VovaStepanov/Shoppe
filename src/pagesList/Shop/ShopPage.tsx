@@ -28,73 +28,73 @@ const cards = [
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 1,
+        id: 5,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 2,
+        id: 6,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 3,
+        id: 7,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 4,
+        id: 8,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 1,
+        id: 9,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 2,
+        id: 10,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 3,
+        id: 11,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 4,
+        id: 12,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 1,
+        id: 13,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 2,
+        id: 14,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 3,
+        id: 15,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
     },
     {
-        id: 4,
+        id: 16,
         name: "Product",
         price: 89.99,
         image: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"

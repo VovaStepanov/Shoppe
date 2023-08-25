@@ -10,6 +10,12 @@ import {useEffect, useRef, useState} from "react";
 import {cn} from "@/lib/twMerge";
 import {useViewportAnimation} from "@/hooks/useViewportAnimation";
 
+interface NavigationListProps {
+    setIsVisible: (value: (((prevState: boolean) => boolean) | boolean)) => void
+}
+
+type visibilitySwitcherArgs = (() => void) | undefined;
+
 const fadeInAnimationVariants = {
     initial: {
         opacity: 0,
@@ -29,12 +35,19 @@ const fadeInAnimationVariants = {
     }
 }
 
-export const NavigationList = () => {
+export const NavigationList: React.FC<NavigationListProps> = ({setIsVisible}) => {
     const ref = useRef(null)
     const {controls} = useViewportAnimation(ref, {
         outOfViewport: "initial",
         insideViewport: "animate"
     });
+
+    const visibilitySwitcher = (func: visibilitySwitcherArgs): () => void => {
+        return () => {
+            setIsVisible(false);
+            func?.();
+        }
+    }
 
     return (
         <motion.ul
@@ -54,7 +67,7 @@ export const NavigationList = () => {
                     <Link
                         className={cn("flex items-center py-3", {"gap-3": item.icon})}
                         href={item.href || "#"}
-                        onClick={item.onClick}>
+                        onClick={visibilitySwitcher(item.onClick)}>
                         <span>
                             {item.icon}
                         </span>
@@ -75,7 +88,7 @@ export const NavigationList = () => {
                     <Link
                         className={cn("flex items-center py-3", {"gap-3": item.icon})}
                         href={item.href || "#"}
-                        onClick={item.onClick}>
+                        onClick={visibilitySwitcher(item.onClick)}>
                         <span>
                             {item.icon}
                         </span>

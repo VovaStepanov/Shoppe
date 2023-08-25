@@ -32,7 +32,9 @@ export const Header = () => {
 
                 {/* Adaptive Navigation */}
                 <AdaptiveNavigation isActive={isAdaptiveMenuVisible} setIsActive={setIsAdaptiveMenuVisible}/>
-                <AdaptiveMenu isVisible={isAdaptiveMenuVisible}/>
+                <AdaptiveMenu
+                    setIsVisible={setIsAdaptiveMenuVisible}
+                    isVisible={isAdaptiveMenuVisible}/>
             </div>
             <div className={"container visible sm:hidden"}>
                 <Input
