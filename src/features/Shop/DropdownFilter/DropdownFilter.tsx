@@ -2,7 +2,7 @@ import {DropdownFilterLayout} from "@/features/Shop/DropdownFilter/DropdownFilte
 import {DropdownFilterItem} from "@/features/Shop/DropdownFilter/DropdownFilterItem";
 
 interface DropdownFilterProps {
-    placeholder: string,
+    placeholder?: string,
     items: any[],
     onChange: () => void
 }

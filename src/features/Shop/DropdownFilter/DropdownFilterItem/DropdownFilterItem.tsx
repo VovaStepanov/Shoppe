@@ -1,6 +1,6 @@
 interface DropdownFilterItemProps {
-    chidren: string | React.ReactNode,
-    onClick: () => void,
+    children: string | React.ReactNode,
+    onClick: (slug: string) => void,
     slug: string
 }
 

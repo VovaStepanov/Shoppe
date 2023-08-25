@@ -4,8 +4,8 @@ import {RangeFilter} from "@/features/Shop/RangeFilter";
 export const Filters = () => {
     return (
         <div>
-            <DropdownFilter items={[]}/>
-            <DropdownFilter items={[]}/>
+            <DropdownFilter items={[]} onChange={() => {}}/>
+            <DropdownFilter items={[]} onChange={() => {}}/>
             <RangeFilter/>
         </div>
     );

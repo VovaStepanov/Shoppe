@@ -15,7 +15,11 @@ export const AdaptiveMenu: React.FC<AdaptiveMenuProps> = (props) => {
     const {isVisible, setIsVisible} = props;
 
     useEffect(() => {
-        document.querySelector("html").style.overflow = isVisible ? "hidden" : "visible"
+        if(typeof window === "undefined") return;
+
+        const htmlTag = document?.querySelector("html");
+
+        htmlTag!.style.overflow = isVisible ? "hidden" : "visible";
     }, [isVisible]);
 
     return (
